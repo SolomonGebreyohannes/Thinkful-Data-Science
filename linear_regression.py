@@ -31,7 +31,14 @@ f = model.fit()
 # Summary and plot 
 print f.summary() 
 plt.scatter(fico, intrate, color='red') 
-plt.show()
+plt.xlabel('FICO Score')   
+plt.ylabel('Interest Rate, in %')  
+# plt.show() 
 
- 
+plt.hold(True)
 
+fico_score = [1.0*i for i in range(650,800)]  
+interest_rate_10 = [73.1137 - (0.0895*fs) + (0.0002*10000.0) for fs in fico_score] 
+interest_rate_30 = [73.1137 - (0.0895*fs) + (0.0002*30000.0) for fs in fico_score] 
+plt.plot(fico_score, interest_rate_10, 'blue', fico_score, interest_rate_30, 'green') 
+plt.show()   
