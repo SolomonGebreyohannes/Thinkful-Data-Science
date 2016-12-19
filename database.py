@@ -42,17 +42,3 @@ with con:
     for tjoin in tjoins:
 	if tjoin[3]=='July':
 	   print tjoin[0],",",tjoin[1]    	
-	 
-    
-    
-
-
-
-
-
-
-
-
-
-
-    
