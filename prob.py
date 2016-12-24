@@ -23,15 +23,3 @@ plt.savefig("histogramplot.png")
 ## QQ-plot 
 stats.probplot(data, dist="norm", plot=plt) 
 plt.savefig("qqplot.png")
- 
-
-
-
-
-
-
-
-
-
-
-
