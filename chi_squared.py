@@ -21,4 +21,3 @@ chi, p = stats.chisquare(freq.values())
 
 # Print 
 print chi, p     
-
