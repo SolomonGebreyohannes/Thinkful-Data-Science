@@ -17,4 +17,3 @@ plt.savefig("histogramplot_loan.png")
 
 stats.probplot(loansData['Amount.Requested'], dist="norm", plot=plt)  
 plt.savefig("qqplot_loan.png")
-
