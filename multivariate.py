@@ -3,7 +3,7 @@ import numpy as np
 import statsmodels.api as sm
 
 # Load the Lending Club Statistics 
-loansData = pd.read_csv('https://github.com/Thinkful-Ed/curric-data-001-data-sets/raw/master/loans/loansData.csv')
+loansData = pd.read_csv('https://spark-public.s3.amazonaws.com/dataanalysis/loansData.csv')
 
 int_rate = [float(value.rstrip('%')) for value in loansData['Interest.Rate']]
 annual_inc = loansData['Monthly.Income']
@@ -24,5 +24,3 @@ print f.summary()
 
 # Add home ownership (home_ownership) to the model 
 # TODO   
-
-
