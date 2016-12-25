@@ -7,12 +7,12 @@ loansData = pd.read_csv('https://spark-public.s3.amazonaws.com/dataanalysis/loan
 
 int_rate = [float(value.rstrip('%')) for value in loansData['Interest.Rate']]
 annual_inc = loansData['Monthly.Income']
-loanamt = loansData['Amount.Requested']
+fico = [int(val.split('-')[0]) for val in loansData['FICO.Range']]
  
 # Use income (annual_inc) to model interest rates (int_rate)   
 y = np.matrix(int_rate).transpose()
-x1 = np.matrix(annual_inc).transpose() 
-x2 = np.matrix(loanamt).transpose()
+x1 = np.matrix(fico).transpose()
+x2 = np.matrix(annual_inc).transpose()
 
 x = np.column_stack([x1,x2])
 
