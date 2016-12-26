@@ -31,30 +31,3 @@ print "The mode for Alcohol and Tobacco data set is", stats.mode(df['Alcohol'])[
 print "The range for Alcohol and Tobacco data set is", (max(df['Alcohol']) - min(df['Alcohol'])),"and", (max(df['Tobacco']) - min(df['Tobacco'])) 
 print "The standard deviation for Alcohol and Tobacco data set is", df['Alcohol'].std(),"and", df['Tobacco'].std() 
 print "The variance for Alcohol and Tobacco data set is", df['Alcohol'].var(),"and", df['Tobacco'].var()
- 
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
