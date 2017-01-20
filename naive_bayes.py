@@ -43,18 +43,3 @@ print "Accuracy = ",float((X.shape[0]-mis)*100)/X.shape[0]
 # Prediction      
 print cl.predict([[145, 160, -15]])
 print cl.predict(([[160, 145, 15]]))
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
