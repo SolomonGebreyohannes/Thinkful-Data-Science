@@ -54,5 +54,3 @@ for i in df.columns:
 
 plt.plot(df)
 plt.show()   
-
-
