@@ -1,6 +1,7 @@
 import pandas as pd 
 from scipy import stats 
 
+# Data 
 data = '''Region,Alcohol,Tobacco
 North,6.47,4.03
 Yorkshire,6.13,3.76
@@ -14,14 +15,15 @@ Wales,5.27,3.53
 Scotland,6.08,4.51
 Northern Ireland,4.02,4.56'''
 
+# Create panda dataframe 
 data = data.splitlines()
-
-data = [i.split(',') for i in data]
+data = [i.split(',') for i in data]  
 
 column_names = data[0] 
 data_rows = data[1::] 
-df = pd.DataFrame(data_rows, columns=column_names) 
+df = pd.DataFrame(data_rows, columns=column_names)
 
+# Statistics - mean, median, mode, range, std, and variance        
 df['Alcohol'] = df['Alcohol'].astype(float)
 df['Tobacco'] = df['Tobacco'].astype(float)
 
