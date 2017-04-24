@@ -22,7 +22,7 @@ plt.bar(freq.keys(), freq.values(), width=1)
 plt.show() 
 
 # Chi-Squared test 
-chi, p = stats.chisquare(freq.values()) 
+chi, p = stats.chisquare(list(freq.values())) 
 
 # Print 
 print chi, p     
